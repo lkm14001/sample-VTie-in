@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+        <script>
+        function radio(){
+          if(document.getElementById("Doc").checked){
+            document.getElementById("Doctor").style.display="block";
+            document.getElementById("Student").style.display="none" ;
+            document.getElementById("Other").style.display="none";
+            }
+        }
+        function radio1(){
+          if(document.getElementById("Stu").checked){
+            document.getElementById("Student").style.display="block";
+            document.getElementById("Doctor").style.display="none";
+            document.getElementById("Other").style.display="none";
+            }
+        }
+        function radio2(){
+          if(document.getElementById("other").checked){
+            document.getElementById("Other").style.display="block";
+            document.getElementById("Student").style.display="none";
+            document.getElementById("Doctor").style.display="none";
+            }
+        }
+        </script>
+</head>
+<body id="register_body">
+    <div class="container">
+        <h2><b>Register here and Create your Account!</b></h2>
+        <div class="form" style="color:#000">
+            <form action="">
+          
+              <label for="fname">First Name : </label>
+              <input type="text" id="fname" name="firstname" placeholder="Enter First name"><br>
+          
+          
+              <label for="lname">Last Name :</label>
+              <input type="text" id="fname" name="firstname" placeholder="Enter Last name"><br>  
+          
+              <label for="Age">Age :</label>
+              <input type="number" id="Age" name="firstname" placeholder="Enter Age"><br>
+          
+          
+              <label for="Gender">Gender :</label>
+              <select>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select> <br>
+          
+            <label for="profession">Register As:</label>
+            <input type="radio" id="Doc" name="ysorno" onclick="radio()" Doctor>
+            <label for="Doc">Doctor</label>
+            <input type="radio" id="Stu" name="ysorno" onclick="radio1()" Student>
+            <label for="Stu">Student</label>
+            <input type="radio" id="other" name="ysorno" onclick="radio2()" others>
+            <label for="other">other</label> <br>
+          <div id="Doctor" style="display:none;">
+            <label for="Regnum">Registration Number :</label>
+            <input type="text" id="Regnum" placeholder="Enter Registration Number"><br>
+            <label for="Aadhar">Aadhar Number :</label>
+            <input type="text" id="Aadhar" placeholder="Enter Aadhar Number"><br>
+            <label for="Hospital">Hospital Name :</label>
+            <input type="text" id="Hospital" placeholder="Your Hospital Name"><br>
+            <label for="Lisence">License id :</label>
+            <input type="text" id="Lisence" placeholder="Enter Lisence number"><br>
+          </div>
+          <div id="Student" style="display:none;">
+            <label for="Aadharnum">Aadhar Number :</label>
+            <input type="text" id="Aadhnum" placeholder="Enter Aadhar Number"><br>
+            <label for="Collegename">College Name :</label>
+            <input type="text" id="colname" placeholder="Enter College Name"><br>
+            <label for="Collegeid">College Id:</label>
+            <input type="text" id="colid" placeholder="Enter College Id"><br>
+            
+          </div>
+          <div id="Other" style="display:none;">
+            <label for="Location">Location :</label>
+            <input type="text" id="Location" placeholder="City/Town"><br>
+            <label for="Occupation">Occupation :</label>
+            <input type="text" id="Occupation" placeholder="Enter job"><br>
+          
+          </div>
+          <label for="Mobnum">Mobile number :</label>
+          <input type="text" id="mobnum" name="Mobile Number" placeholder="Enter mobile number"><br>
+          
+          <label for="Mail-id">Email Address:</label>
+          <input type="email" id="mail-id" name="Mail-id" placeholder="Enter Mail-id"><br>
+
+          <label for="Preaddr">Present Address :</label>
+          <input type="text" id="Presentadd" name="Present Address" placeholder="Town/city,State"><br>
+          
+          
+          <label for="Peraddr">Permanent Address :</label>
+          <input type="text" id="Permanentadd" name="Permanent Address" placeholder="Town/city,State"><br>
+          
+          <div class="submit">
+          <button type="submit"><span>Submit</span>
+          </div>
+          </form>
+          </div>
+    </div>
+</body>
+</html>
