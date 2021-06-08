@@ -93,6 +93,7 @@ ul li.active a{
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     box-shadow: 8px 8px 50px #000;
+    border: 2px solid black;
 }
 h2{
     margin: 0;
@@ -109,7 +110,7 @@ h2{
 }
 .wrapper input[type=text], .wrapper input[type=password]{
     border-bottom: 1px solid #000;
-    background: transparent;
+    background: #fff;
     height: 30px;
     font-size: 16px;
     opacity: 1;
@@ -192,6 +193,7 @@ h2{
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Poppins;
 }
 .form{
     background:rgba(255,255,255,0.1);
